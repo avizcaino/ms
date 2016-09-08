@@ -3,4 +3,6 @@
  */
 export class Events{
   public static navigateToHome = 'navigation::home';
+  public static navigateToLogin = 'navigation::login';
+  public static logout = 'user::logout';
 }

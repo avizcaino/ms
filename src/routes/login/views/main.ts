@@ -17,12 +17,12 @@ export class LoginViewModel{
     this.loginCommand = new DelegateCommandVoid(this.doLogin.bind(this), this.canExecuteLogin.bind(this));
   }
 
-  doLogin(){
+  private doLogin(){
     this._loginService.login({username: this.username, password: this.password})
       .then(r => r ? this._ea.publish(Events.navigateToHome) : null);
   }
 
-  canExecuteLogin(){
+  private canExecuteLogin(){
     return true;
 
     /**

@@ -4,14 +4,19 @@
       <paper-toolbar>
         <div>Application</div>
       </paper-toolbar>
-      <div>
+      <div class="sidebar-content">
         <paper-menu>
-          <paper-item>${'home.sidebar.home' | t}</paper-item>
-        </paper-menu>
-        <paper-menu>
-          <paper-item class="layout horizontal">
-            <div>${'home.sidebar.logout' | t}</div>
-            <iron-icon icon="exit-to-app"></iron-icon>
+          <paper-item cmd="command.bind: navigateHomeCommand">${'home.sidebar.home' | t}</paper-item>
+          <paper-submenu opened>
+            <paper-menu class="menu-content">
+              <paper-item>${'home.sidebar.watchlist' | t}</paper-item>
+              <paper-item>${'home.sidebar.ratings' | t}</paper-item>
+              <paper-item>${'home.sidebar.lists' | t}</paper-item>
+            </paper-menu>
+          </paper-submenu>
+          <paper-item class="layout horizontal" cmd="command.bind: logoutCommand">
+            <div class="flex">${'home.sidebar.logout' | t}</div>
+            <iron-icon class="flex-end" icon="exit-to-app"></iron-icon>
           </paper-item>
         </paper-menu>
       </div>

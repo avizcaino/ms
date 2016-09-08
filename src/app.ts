@@ -4,11 +4,13 @@ import {Redirect} from "aurelia-router";
 import {UserInfo} from "login-model";
 import {EventAggregator} from "aurelia-event-aggregator";
 import {Events} from "./core/events/events";
+import {LoginService} from "./routes/login/services/login-service-local";
 
 @autoinject
 export class App {
-  constructor(private router: Router, private _ea: EventAggregator){
+  constructor(private router: Router, private _ea: EventAggregator, private _loginService: LoginService){
     this._ea.subscribe(Events.navigateToHome, this.navigateToHome.bind(this));
+    this._ea.subscribe(Events.logout, this.logout.bind(this));
   }
 
   configureRouter(config: RouterConfiguration, router: Router) {
@@ -24,6 +26,11 @@ export class App {
 
   private navigateToHome(){
     this.router.navigate('home');
+  }
+
+  private logout(){
+    this._loginService.logout()
+      .then(r => this.router.navigate('login'));
   }
 }
 

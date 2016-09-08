@@ -28,4 +28,9 @@ export class LoginServiceBase implements ILoginService{
 
     return this._userInfo.isLoggedIn;
   }
+
+  logout(): Promise<boolean>{
+    this._userInfo.isLoggedIn = false;
+    return Promise.resolve(true);
+  }
 }
