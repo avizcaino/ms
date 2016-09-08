@@ -1,0 +1,13 @@
+{
+  "name": "mys",
+  "private": true,
+  "dependencies": {
+    "polymer": "^1.6.0",
+    "paper-elements": "^1.0.7",
+    "iron-elements": "^1.0.10",
+    "roboto-condensed": "^0.3.0",
+    "webcomponentsjs": "^0.7.22",
+    "roboto-fontface": "~0.5.0",
+    "neon-elements": "~1.0.0"
+  }
+}

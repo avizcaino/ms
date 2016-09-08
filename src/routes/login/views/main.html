@@ -1,0 +1,13 @@
+<template>
+  <div class="login layout vertical center-center">
+    <paper-card elevation="0">
+      <div class="card-content">
+        <paper-input type="text" label="${'login.card.username.label' | t}" value.two-way="username" on-enter="target: login-button"></paper-input>
+        <paper-input type="password" label="${'login.card.password.label' | t}" value.two-way="password" on-enter="target: login-button"></paper-input>
+      </div>
+      <div class="card-actions layout horizontal center-center">
+        <paper-button id="login-button" raised cmd="command.bind: loginCommand">${'login.card.button' | t}</paper-button>
+      </div>
+    </paper-card>
+  </div>
+</template>

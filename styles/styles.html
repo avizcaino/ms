@@ -1,0 +1,99 @@
+<style is="custom-style">
+  :root {
+    /*--primary-text-color: var(--paper-grey-900);
+    --primary-background-color: #ffffff;
+    --secondary-text-color: #737373;
+    --disabled-text-color: #9b9b9b;
+    --divider-color: #dbdbdb;
+    --primary-color: var(--paper-indigo-500);
+    --light-primary-color: var(--paper-indigo-100);
+    --dark-primary-color: var(--paper-indigo-700);
+    --accent-color: var(--paper-pink-a200);
+    --light-accent-color: var(--paper-pink-a100);
+    --dark-accent-color: var(--paper-pink-a400);*/
+    --primary-custom-background-color: var(--paper-grey-900);
+    --secondary-custom-background-color: var(--paper-grey-800);
+    --primary-custom-text-color: var(--paper-grey-200);
+    --secondary-custom-text-color: var(--paper-grey-400);
+    --terciary-custom-text-color: var(--paper-grey-600);
+  }
+
+  body, html {
+    font-size: 14px;
+    font-family: 'Roboto-Regular';
+    height: 100%;
+    background-color: var(--primary-custom-background-color);
+    color: var(--primary-custom-text-color);
+  }
+
+  body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../images/login/iceland.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.05;
+    z-index: 2;
+  }
+
+  body .spinner paper-spinner-lite{
+    --paper-spinner-color: var(--primary-custom-text-color);
+    --paper-spinner-stroke-width: 0.25rem;
+    height: 8rem;
+    width: 8rem;
+    padding: 1rem;
+  }
+
+  /******************************************
+  *   APP
+  *******************************************/
+  .app-router-view{
+    height: 100%;
+    z-index:3;
+  }
+
+  /******************************************
+  *   LOGIN
+  *******************************************/
+  .login{
+    height: 100%;
+  }
+
+  .login paper-card{
+    background-color: rgba(0,0,0,0);
+  }
+
+  .login paper-card .card-content{
+    width: 16rem;
+    height: 9rem;
+  }
+
+  .login paper-card paper-input {
+    --paper-input-container-focus-color: var(--secondary-custom-text-color);
+    --paper-input-container-color: var(--terciary-custom-text-color);
+    --paper-input-container-input-color: var(--primary-custom-text-color);
+  }
+
+  .login paper-card .card-actions{
+    border-top-width: 0;
+  }
+
+  .login paper-button{
+    width: 100%;
+    background-color: var(--primary-custom-background-color);
+    --paper-button-ink-color: var(--secondary-custom-background-color);
+  }
+
+  /******************************************
+  *   HOME
+  *******************************************/
+  paper-drawer-panel{
+    --paper-drawer-panel-left-drawer-container: {
+      background-color: var(--primary-custom-background-color);
+    };
+  }
+</style>

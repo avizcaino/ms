@@ -1,0 +1,20 @@
+{
+  "login": {
+    "card": {
+      "title": "Login",
+      "button": "Access",
+      "username": {
+        "label": "Username"
+      },
+      "password": {
+        "label": "Password"
+      }
+    }
+  },
+  "home":{
+    "sidebar":{
+      "home": "Home",
+      "logout": "Logout"
+    }
+  }
+}
