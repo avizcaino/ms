@@ -16,9 +16,7 @@ export class App {
     config.addPipelineStep('authorize', AuthorizeStep); // Add a route filter to the authorize extensibility point.
     config.map([
       { route: ['', 'home'], name: 'home',      moduleId: 'routes/home/views/main',      nav: true, auth: true,  title: '' },
-      { route: 'login',      name: 'login',     moduleId: 'routes/login/views/main',     nav: true, auth: false, title: 'Login' },
-      { route: 'users',         name: 'users',        moduleId: 'users',        nav: true, auth: true, title: 'Github Users' },
-      { route: 'child-router',  name: 'child-router', moduleId: 'child-router', nav: true, auth: true, title: 'Child Router' }
+      { route: 'login',      name: 'login',     moduleId: 'routes/login/views/main',     nav: true, auth: false, title: 'Login' }
     ]);
 
     this.router = router;
