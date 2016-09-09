@@ -39,8 +39,8 @@ class AuthorizeStep {
   constructor(private _userInfo: UserInfo){}
   run(navigationInstruction, next) {
     if (navigationInstruction.getAllInstructions().some(i => i.config.auth)) {
-      //var isLoggedIn = this._userInfo.isLoggedIn;// insert magic here;
-      var isLoggedIn = true;
+      var isLoggedIn = this._userInfo.isLoggedIn;
+      //var isLoggedIn = true;
       if (!isLoggedIn) {
         return next.cancel(new Redirect('login'));
       }

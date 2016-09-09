@@ -1,14 +1,24 @@
 <template>
   <paper-drawer-panel>
     <paper-header-panel drawer>
-      <paper-toolbar>
-        <div>Application</div>
+      <paper-toolbar class="sidebar-toolbar">
+        <div class="layout horizontal center-center header-container">
+          <div class="flex profile-pic-container">
+            <img class="profile-pic" src="${userInfo.profilePic}"/>
+          </div>
+          <div class="flex-2">
+            ${userInfo.fullName}
+          </div>
+          <div class="flex-end">
+            <paper-icon-button icon="social:notifications"></paper-icon-button>
+          </div>
+        </div>
       </paper-toolbar>
       <div class="sidebar-content">
         <paper-menu>
           <paper-item cmd="command.bind: navigateHomeCommand">${'home.sidebar.home' | t}</paper-item>
           <paper-submenu opened>
-            <paper-menu class="menu-content">
+            <paper-menu class="sidebar-sections menu-content">
               <paper-item>${'home.sidebar.watchlist' | t}</paper-item>
               <paper-item>${'home.sidebar.ratings' | t}</paper-item>
               <paper-item>${'home.sidebar.lists' | t}</paper-item>
