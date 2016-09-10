@@ -32,7 +32,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('../images/login/iceland.jpg');
+    background-image: url('../images/login/bg.jpg');
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -102,21 +102,43 @@
     --paper-toolbar-color: var(--primary-custom-text-color);
   }
 
-  paper-drawer-panel .sidebar-toolbar .header-container{
-    width: 100%;
+  paper-drawer-panel .sidebar-toolbar{
+    background-image: url('../images/home/sidebar-header.jpg');
+    background-size: cover;
+    height: 160px;
   }
 
-  paper-drawer-panel .sidebar-toolbar .profile-pic-container{
-    width: 2.5rem;
-    height: 2.5rem;
+  paper-drawer-panel .sidebar-toolbar .sidebar-toolbar-content {
+    height: 160px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  paper-drawer-panel .sidebar-toolbar .sidebar-profile-pic{
+    height: 88px;
+  }
+
+  paper-drawer-panel .sidebar-toolbar .sidebar-profile-data{
+    height:40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  paper-drawer-panel .sidebar-toolbar .sidebar-profile-data .sidebar-profile-fullname{
+    font-family: 'Roboto-Medium';
+  }
+
+  paper-drawer-panel .sidebar-toolbar .sidebar-profile-data .sidebar-profile-username{
+    font-family: 'Roboto-Regular';
+  }
+
+  paper-drawer-panel .sidebar-toolbar .sidebar-profile-pic{
+    padding-top: 16px;
   }
 
   paper-drawer-panel .sidebar-toolbar .profile-pic{
-    max-width: 100%;
-    max-height: 100%;
-    -webkit-border-radius:10rem;
-    -moz-border-radius:10rem;
-    border-radius:10rem;
+    width: 5rem;
+    border-radius: 10rem;
   }
 
   paper-drawer-panel .sidebar-content paper-menu{

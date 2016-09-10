@@ -9,8 +9,8 @@ import {DelegateCommandVoid} from "../../../core/ui/command/command";
 
 @autoinject
 export class LoginViewModel{
-  public username: string;
-  public password: string;
+  public username: string = 'avizcaino';
+  public password: string = 'test';
   public loginCommand: DelegateCommandVoid;
 
   constructor(private _loginService: LoginService, private _ea: EventAggregator){

@@ -14,7 +14,10 @@
   "home":{
     "sidebar":{
       "home": "Home",
-      "logout": "Logout"
+      "logout": "Logout",
+      "watchlist": "Watchlist",
+      "ratings": "Ratings",
+      "list": "List"
     }
   }
 }

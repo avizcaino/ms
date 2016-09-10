@@ -1,29 +1,27 @@
 <template>
   <paper-drawer-panel>
     <paper-header-panel drawer>
-      <paper-toolbar class="sidebar-toolbar">
-        <div class="layout horizontal center-center header-container">
-          <div class="flex profile-pic-container">
+      <paper-material class="sidebar-toolbar" elevation="2">
+        <div class="sidebar-toolbar-content">
+          <div class="sidebar-profile-pic">
             <img class="profile-pic" src="${userInfo.profilePic}"/>
           </div>
-          <div class="flex-2">
-            ${userInfo.fullName}
-          </div>
-          <div class="flex-end">
-            <paper-icon-button icon="social:notifications"></paper-icon-button>
+          <div class="sidebar-profile-data">
+            <div class="sidebar-profile-fullname">${userInfo.fullName}</div>
+            <div class="sidebar-profile-username">${userInfo.username}</div>
           </div>
         </div>
-      </paper-toolbar>
+      </paper-material>
       <div class="sidebar-content">
         <paper-menu>
           <paper-item cmd="command.bind: navigateHomeCommand">${'home.sidebar.home' | t}</paper-item>
-          <paper-submenu opened>
+          <!--paper-submenu opened>
             <paper-menu class="sidebar-sections menu-content">
               <paper-item>${'home.sidebar.watchlist' | t}</paper-item>
               <paper-item>${'home.sidebar.ratings' | t}</paper-item>
               <paper-item>${'home.sidebar.lists' | t}</paper-item>
             </paper-menu>
-          </paper-submenu>
+          </paper-submenu-->
           <paper-item class="layout horizontal" cmd="command.bind: logoutCommand">
             <div class="flex">${'home.sidebar.logout' | t}</div>
             <iron-icon class="flex-end" icon="exit-to-app"></iron-icon>
@@ -35,6 +33,7 @@
       <paper-toolbar>
         <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
         <div>Title</div>
+        <paper-progress class="middle fit" value="60"></paper-progress>
       </paper-toolbar>
       <div> Main content... </div>
     </paper-header-panel>
