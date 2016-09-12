@@ -14,7 +14,7 @@ export class App {
   }
 
   configureRouter(config: RouterConfiguration, router: Router) {
-    config.title = 'Aurelia';
+    config.title = 'MS';
     config.addPipelineStep('authorize', AuthorizeStep); // Add a route filter to the authorize extensibility point.
     config.map([
       { route: ['', 'home'], name: 'home',      moduleId: 'routes/home/views/main',      nav: true, auth: true,  title: '' },

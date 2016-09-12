@@ -1,33 +1,91 @@
 <template>
   <paper-drawer-panel>
     <paper-header-panel drawer>
-      <paper-material class="sidebar-toolbar" elevation="2">
+      <user-toolbar>
+        <paper-material elevation="2" class="sidebar-toolbar">
+          <div class="sidebar-profile-pic">
+            <img class="profile-pic" src="${userInfo.profilePic}"/>
+          </div>
+        </paper-material>
+        <paper-menu class="layout vertical sidebar-profile-menu">
+          <paper-submenu focused>
+            <paper-item class="menu-trigger">
+              <div class="layout vertical full-width">
+                <div class="sidebar-profile-fullname">${userInfo.fullName}</div>
+                <div class="layout horizontal justified sidebar-profile-username">
+                  ${userInfo.username}
+                  <iron-icon icon="arrow-drop-down"></iron-icon>
+                </div>
+              </div>
+            </paper-item>
+            <paper-menu class="menu-content">
+              <paper-icon-item cmd="command.bind: logoutCommand">
+                ${'home.sidebar.logout' | t}
+                <iron-icon icon="exit-to-app" item-icon></iron-icon>
+              </paper-icon-item>
+            </paper-menu>
+          </paper-submenu>
+        </paper-menu>
+      </user-toolbar>
+      <paper-menu class="menu-nav">
+        <paper-item cmd="command.bind: navigateHomeCommand">${'home.sidebar.home' | t}</paper-item>
+        <paper-submenu opened>
+        <paper-menu class="sidebar-sections menu-content">
+          <paper-item>${'home.sidebar.watchlist' | t}</paper-item>
+          <paper-item>${'home.sidebar.ratings' | t}</paper-item>
+          <paper-item>${'home.sidebar.lists' | t}</paper-item>
+        </paper-menu>
+        </paper-submenu>
+      </paper-menu>
+      <!--<paper-material class="sidebar-toolbar" elevation="2">
         <div class="sidebar-toolbar-content">
           <div class="sidebar-profile-pic">
             <img class="profile-pic" src="${userInfo.profilePic}"/>
           </div>
-          <div class="sidebar-profile-data">
+          &lt;!&ndash;div class="sidebar-profile-data">
             <div class="sidebar-profile-fullname">${userInfo.fullName}</div>
             <div class="sidebar-profile-username">${userInfo.username}</div>
+          </div&ndash;&gt;
+          <div class="sidebar-profile-data">
+            <paper-submenu focused>
+              <paper-item class="menu-trigger">
+                <div class="layout vertical full-width">
+                  <div class="sidebar-profile-fullname">${userInfo.fullName}</div>
+                  <div class="layout horizontal justified">
+                    <div class="sidebar-profile-username">${userInfo.username}</div>
+                    <iron-icon icon="arrow-drop-down"></iron-icon>
+                  </div>
+                </div>
+              </paper-item>
+              <paper-menu class="menu-content">
+                <paper-icon-item cmd="command.bind: logoutCommand">
+                  <iron-icon icon="close" item-icon></iron-icon>
+                  ${'home-sidebar&#45;&#45;logout' | t}
+                </paper-icon-item>
+              </paper-menu>
+            </paper-submenu>
           </div>
         </div>
       </paper-material>
-      <div class="sidebar-content">
+      <paper-menu class="menu-nav">
+        <paper-item>displace</paper-item>
+      </paper-menu>
+      <div class="sidebar-content menu-nav">
         <paper-menu>
           <paper-item cmd="command.bind: navigateHomeCommand">${'home.sidebar.home' | t}</paper-item>
-          <!--paper-submenu opened>
+          &lt;!&ndash;paper-submenu opened>
             <paper-menu class="sidebar-sections menu-content">
               <paper-item>${'home.sidebar.watchlist' | t}</paper-item>
               <paper-item>${'home.sidebar.ratings' | t}</paper-item>
               <paper-item>${'home.sidebar.lists' | t}</paper-item>
             </paper-menu>
-          </paper-submenu-->
+          </paper-submenu&ndash;&gt;
           <paper-item class="layout horizontal" cmd="command.bind: logoutCommand">
             <div class="flex">${'home.sidebar.logout' | t}</div>
             <iron-icon class="flex-end" icon="exit-to-app"></iron-icon>
           </paper-item>
         </paper-menu>
-      </div>
+      </div>-->
     </paper-header-panel>
     <paper-header-panel main>
       <paper-toolbar>

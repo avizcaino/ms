@@ -49,6 +49,13 @@
   }
 
   /******************************************
+  *   COMMON
+  *******************************************/
+  .full-width {
+    width: 100%;
+  }
+
+  /******************************************
   *   APP
   *******************************************/
   .app-router-view{
@@ -84,8 +91,8 @@
 
   .login paper-button{
     width: 100%;
-    background-color: var(--primary-custom-background-color);
-    --paper-button-ink-color: var(--secondary-custom-background-color);
+    background-color: var(--secondary-custom-background-color);
+    --paper-button-ink-color: var(--primary-custom-background-color);
   }
 
   /******************************************
@@ -102,13 +109,53 @@
     --paper-toolbar-color: var(--primary-custom-text-color);
   }
 
-  paper-drawer-panel .sidebar-toolbar{
+  user-toolbar .sidebar-toolbar{
     background-image: url('../images/home/sidebar-header.jpg');
     background-size: cover;
     height: 160px;
   }
 
-  paper-drawer-panel .sidebar-toolbar .sidebar-toolbar-content {
+  user-toolbar .sidebar-toolbar .sidebar-profile-pic{
+    height: 88px;
+    padding-top: 16px;
+    padding-left: 16px;
+  }
+
+  paper-drawer-panel .sidebar-toolbar .profile-pic{
+    width: 5.5rem;
+    border-radius: 10rem;
+  }
+
+  user-toolbar .sidebar-profile-menu{
+    margin-top: -65px;
+    background: none;
+    color: var(--primary-custom-text-color);
+    padding-bottom:0;
+    margin-bottom:8px;
+  }
+
+  user-toolbar .sidebar-profile-menu .sidebar-profile-fullname{
+    font-family: 'Roboto-Medium';
+    font-size: 14px;
+  }
+
+  user-toolbar .sidebar-profile-menu .sidebar-profile-username{
+    font-family: 'Roboto-Regular';
+    font-size: 14px;
+  }
+
+  user-toolbar .sidebar-profile-menu .menu-content{
+    padding:0;
+    margin-top:8px;
+  }
+
+  user-toolbar .sidebar-profile-menu paper-icon-item{
+    background-color: var(--secondary-custom-background-color);
+    color: var(--primary-custom-text-color);
+    font-size: 14px;
+  }
+
+  /*paper-drawer-panel .sidebar-toolbar .sidebar-toolbar-content {
     height: 160px;
     padding-right: 16px;
     padding-left: 16px;
@@ -120,16 +167,21 @@
 
   paper-drawer-panel .sidebar-toolbar .sidebar-profile-data{
     height:40px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-bottom: 16px;
+  }
+
+  paper-drawer-panel .sidebar-toolbar .sidebar-profile-data paper-item{
+    padding:0;
   }
 
   paper-drawer-panel .sidebar-toolbar .sidebar-profile-data .sidebar-profile-fullname{
     font-family: 'Roboto-Medium';
+    font-size: 14px;
   }
 
   paper-drawer-panel .sidebar-toolbar .sidebar-profile-data .sidebar-profile-username{
     font-family: 'Roboto-Regular';
+    font-size: 14px;
   }
 
   paper-drawer-panel .sidebar-toolbar .sidebar-profile-pic{
@@ -149,5 +201,5 @@
   paper-drawer-panel .sidebar-content .sidebar-sections{
     --paper-menu-background-color: var(--primary-custom-background-color);
     --paper-menu-color: var(--primary-custom-text-color);
-  }
+  }*/
 </style>
