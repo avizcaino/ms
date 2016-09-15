@@ -1,0 +1,847 @@
+{
+  "data":{
+    "names":[
+      {
+        "dateOfBirth":"12 August 1975",
+        "placeOfBirth":" Falmouth, Massachusetts, USA",
+        "birthName":"Caleb Casey McGuire Affleck-Boldt",
+        "height":"5' 9\" (1.75 m)",
+        "bio":"An accomplished and striking performer, Academy Award® nominee Casey Affleck has established himself as a powerful leading man with performances in multiple upcoming projects. Affleck will next be seen starring opposite Michelle Williams in Manchester by the Sea. The film tells the story of an uncle (Affleck) who is forced to take care of his teenage nephew after the boy's father dies. Written and directed by Kenneth Lonergan, the film will be released on November 18th by Amazon Studios. Affleck was last seen in Triple 9 opposite Woody Harrelson and Kate Winslet. The film follows a gang of criminals and corrupt cops who plan to murder a police office in order to pull off their biggest heist yet. The film was released by Open Road in February. Additionally, Affleck starred in The Finest Hours opposite Chris Pine. The Disney film recounts the story of the Coast Guard's daring rescue attempt off the coast of Cape Cod after a pair of oil tankers are destroyed during a blizzard in 1952. Additional credits include Christopher Nolan's Interstellar opposite Matthew McConaughey, Jessica Chastain, and Anne Hathaway; Out of the Furnace opposite Christian Bale; and Ain't Them Bodies Saints opposite Rooney Mara. Affleck was nominated for an Academy Award®, Golden Globe®, and Screen Actors Guild® Award for his performance in the character drama The Assassination of Jesse James by the Coward Robert Ford. Written and directed by Andrew Dominik (\"Chopper\"), the Warner Bros. film stars Affleck as 'Ford' opposite Brad Pitt's 'Jesse James.' The story follows 'Ford's' sycophantic obsession with 'James' that quickly turns into growing resentment after he joins the legendary outlaw's gang, leading to his subsequent plan to murder 'James' and claim his rightful glory. Additionally, Casey garnered significant praise for his starring role in the Miramax film Gone, Baby Gone. Based on Dennis Lehane's novel of the same title, and adapted for the screen and featuring the directorial debut by Ben Affleck, the film is the story of two Boston detectives in search of a four-year-old girl who has been kidnapped. The film also stars Ed Harris, Morgan Freeman and Michelle Monaghan. In 2014, Affleck and John Powers Middleton formed The Affleck/Middleton Project, a full service production company designed to develop and produce film and television content across a variety of genres. With a mission to produce quality films and television series that connect with audiences, The Affleck/Middleton Project looks to develop and produce a new wave of great American entertainment. It was recently announced that The Affleck/Middleton Project has secured the rights to Far Bright Star, the second in the book series of the same name by 'Robert Olmstead;' Affleck will direct a script by Damien Ober with three-time Academy Award® nominee Joaquin Phoenix set to star. Affleck also directed I'm Still Here, which he also wrote and produced starring Joaquin Phoenix. On stage, Casey appeared in Kenneth Lonergan's West End debut of his award winning play This is Our Youth. Affleck played the role of 'Warren' alongside Matt Damon and Summer Phoenix. Affleck also co-wrote with and starred alongside Matt Damon in Gus Van Sant's independent road movie Gerry. He has also appeared in Van Sant's Good Will Hunting and To Die For, Hamlet with Ethan Hawke and Julia Stiles, the Oceans trilogy and Tony Goldwyn's The Last Kiss with Zach Braff and Blythe Danner.",
+        "urlPhoto":"http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/medium/name-2135195744._CB282921315_.png",
+        "urlIMDB":"http://www.imdb.com/name/nm0000729",
+        "name":"Casey Affleck",
+        "idIMDB":"nm0000729",
+        "born":"August 12, 1975 in Falmouth, Massachusetts, USA",
+        "starSign":"Leo",
+        "starMeter":"Top 5000",
+        "uniqueName":"Casey Affleck",
+        "actorActress":"Actor",
+        "filmographies":[
+          {
+            "section":"Actor",
+            "filmography":[
+              {
+                "title":"Lewis and Clark",
+                "year":" 2018",
+                "remarks":[
+                  "(TV Mini-Series)"
+                ],
+                "imdbid":"tt0485843"
+              },
+              {
+                "title":"Triple 9",
+                "year":" 2016",
+                "remarks":null,
+                "imdbid":"tt1712261"
+              },
+              {
+                "title":"The Finest Hours",
+                "year":" 2016",
+                "remarks":null,
+                "imdbid":"tt2025690"
+              },
+              {
+                "title":"Manchester by the Sea",
+                "year":" 2016",
+                "remarks":null,
+                "imdbid":"tt4034228"
+              },
+              {
+                "title":"Interstellar",
+                "year":" 2014",
+                "remarks":null,
+                "imdbid":"tt0816692"
+              },
+              {
+                "title":"Out of the Furnace",
+                "year":" 2013",
+                "remarks":null,
+                "imdbid":"tt1206543"
+              },
+              {
+                "title":"Ain't Them Bodies Saints",
+                "year":" 2013",
+                "remarks":null,
+                "imdbid":"tt2388637"
+              },
+              {
+                "title":"ParaNorman",
+                "year":" 2012",
+                "remarks":[
+                  "(voice)"
+                ],
+                "imdbid":"tt1623288"
+              },
+              {
+                "title":"Tower Heist",
+                "year":" 2011",
+                "remarks":null,
+                "imdbid":"tt0471042"
+              },
+              {
+                "title":"WWII in HD: The Air War",
+                "year":" 2010",
+                "remarks":[
+                  "(TV Movie documentary)",
+                  "Joe Armanini (voice)"
+                ],
+                "imdbid":"tt1776357"
+              },
+              {
+                "title":"I'm Still Here",
+                "year":" 2010/I",
+                "remarks":null,
+                "imdbid":"tt1356864"
+              },
+              {
+                "title":"The Killer Inside Me",
+                "year":" 2010",
+                "remarks":null,
+                "imdbid":"tt0954947"
+              },
+              {
+                "title":"Gone Baby Gone",
+                "year":" 2007",
+                "remarks":null,
+                "imdbid":"tt0452623"
+              },
+              {
+                "title":"The Assassination of Jesse James by the Coward Robert Ford",
+                "year":" 2007",
+                "remarks":null,
+                "imdbid":"tt0443680"
+              },
+              {
+                "title":"Ocean's Thirteen",
+                "year":" 2007",
+                "remarks":null,
+                "imdbid":"tt0496806"
+              },
+              {
+                "title":"The Last Kiss",
+                "year":" 2006",
+                "remarks":null,
+                "imdbid":"tt0434139"
+              },
+              {
+                "title":"Lonesome Jim",
+                "year":" 2005",
+                "remarks":null,
+                "imdbid":"tt0385056"
+              },
+              {
+                "title":"Ocean's Twelve",
+                "year":" 2004",
+                "remarks":null,
+                "imdbid":"tt0349903"
+              },
+              {
+                "title":"Gerry",
+                "year":" 2002",
+                "remarks":null,
+                "imdbid":"tt0302674"
+              },
+              {
+                "title":"Ocean's Eleven",
+                "year":" 2001",
+                "remarks":null,
+                "imdbid":"tt0240772"
+              },
+              {
+                "title":"Soul Survivors",
+                "year":" 2001",
+                "remarks":null,
+                "imdbid":"tt0218619"
+              },
+              {
+                "title":"American Pie 2",
+                "year":" 2001",
+                "remarks":null,
+                "imdbid":"tt0252866"
+              },
+              {
+                "title":"Attention Shoppers",
+                "year":" 2000",
+                "remarks":null,
+                "imdbid":"tt0159291"
+              },
+              {
+                "title":"Hamlet",
+                "year":" 2000",
+                "remarks":null,
+                "imdbid":"tt0171359"
+              },
+              {
+                "title":"Committed",
+                "year":" 2000/I",
+                "remarks":null,
+                "imdbid":"tt0144142"
+              },
+              {
+                "title":"Drowning Mona",
+                "year":" 2000",
+                "remarks":null,
+                "imdbid":"tt0186045"
+              },
+              {
+                "title":"American Pie",
+                "year":" 1999",
+                "remarks":[
+                  "(uncredited)"
+                ],
+                "imdbid":"tt0163651"
+              },
+              {
+                "title":"200 Cigarettes",
+                "year":" 1999",
+                "remarks":null,
+                "imdbid":"tt0137338"
+              },
+              {
+                "title":"Desert Blue",
+                "year":" 1998",
+                "remarks":null,
+                "imdbid":"tt0126261"
+              },
+              {
+                "title":"Good Will Hunting",
+                "year":" 1997",
+                "remarks":null,
+                "imdbid":"tt0119217"
+              },
+              {
+                "title":"Floating",
+                "year":" 1997",
+                "remarks":null,
+                "imdbid":"tt0139216"
+              },
+              {
+                "title":"Chasing Amy",
+                "year":" 1997",
+                "remarks":null,
+                "imdbid":"tt0118842"
+              },
+              {
+                "title":"Race the Sun",
+                "year":" 1996",
+                "remarks":null,
+                "imdbid":"tt0117427"
+              },
+              {
+                "title":"To Die For",
+                "year":" 1995",
+                "remarks":null,
+                "imdbid":"tt0114681"
+              },
+              {
+                "title":"The Kennedys of Massachusetts",
+                "year":" 1990",
+                "remarks":[
+                  "(TV Mini-Series)"
+                ],
+                "imdbid":"tt0098838"
+              },
+              {
+                "title":"Lemon Sky",
+                "year":" 1988",
+                "remarks":null,
+                "imdbid":"tt0093403"
+              }
+            ]
+          },
+          {
+            "section":"Producer",
+            "filmography":[
+              {
+                "title":"Far Bright Star",
+                "year":" 2017",
+                "remarks":[
+                  "(producer)"
+                ],
+                "imdbid":"tt5212894"
+              },
+              {
+                "title":"The Joe Donovan Project",
+                "year":" 2016",
+                "remarks":[
+                  "(Documentary)",
+                  "(executive producer)"
+                ],
+                "imdbid":"tt4023846"
+              },
+              {
+                "title":"I Am Dying",
+                "year":" 2015",
+                "remarks":[
+                  "(TV Movie documentary)",
+                  "(executive producer)"
+                ],
+                "imdbid":"tt4851590"
+              },
+              {
+                "title":"I'm Still Here",
+                "year":" 2010/I",
+                "remarks":[
+                  "(producer)"
+                ],
+                "imdbid":"tt1356864"
+              },
+              {
+                "title":"All Grown Up",
+                "year":" 2003",
+                "remarks":[
+                  "(TV Movie)",
+                  "(executive producer)"
+                ],
+                "imdbid":"tt0778608"
+              }
+            ]
+          },
+          {
+            "section":"Director",
+            "filmography":[
+              {
+                "title":"Far Bright Star",
+                "year":" 2017",
+                "remarks":null,
+                "imdbid":"tt5212894"
+              },
+              {
+                "title":"I'm Still Here",
+                "year":" 2010/I",
+                "remarks":null,
+                "imdbid":"tt1356864"
+              },
+              {
+                "title":"The Book of Charles",
+                "year":" 1999",
+                "remarks":null,
+                "imdbid":"tt0184981"
+              }
+            ]
+          },
+          {
+            "section":"Writer",
+            "filmography":[
+              {
+                "title":"I'm Still Here",
+                "year":" 2010/I",
+                "remarks":[
+                  "(written by)"
+                ],
+                "imdbid":"tt1356864"
+              },
+              {
+                "title":"Gerry",
+                "year":" 2002",
+                "remarks":[
+                  "(written by)"
+                ],
+                "imdbid":"tt0302674"
+              }
+            ]
+          },
+          {
+            "section":"Editor",
+            "filmography":[
+              {
+                "title":"I'm Still Here",
+                "year":" 2010/I",
+                "remarks":null,
+                "imdbid":"tt1356864"
+              },
+              {
+                "title":"Gerry",
+                "year":" 2002",
+                "remarks":null,
+                "imdbid":"tt0302674"
+              }
+            ]
+          },
+          {
+            "section":"Miscellaneous Crew",
+            "filmography":[
+              {
+                "title":"Finding Forrester",
+                "year":" 2000",
+                "remarks":[
+                  "(assistant: Gus Van Sant)",
+                  "/ (technical consultant)"
+                ],
+                "imdbid":"tt0181536"
+              }
+            ]
+          },
+          {
+            "section":"Cinematographer",
+            "filmography":[
+              {
+                "title":"I'm Still Here",
+                "year":" 2010/I",
+                "remarks":null,
+                "imdbid":"tt1356864"
+              }
+            ]
+          },
+          {
+            "section":"Camera and Electrical Department",
+            "filmography":[
+              {
+                "title":"I Killed My Lesbian Wife, Hung Her on a Meathook, and Now I Have a Three Picture Deal at Disney",
+                "year":" 1993",
+                "remarks":[
+                  "(Short)",
+                  "(video assistant - as Caleb Affleck)"
+                ],
+                "imdbid":"tt0166222"
+              }
+            ]
+          },
+          {
+            "section":"Thanks",
+            "filmography":[
+              {
+                "title":"Grace Is Gone",
+                "year":" 2007",
+                "remarks":[
+                  "(special thanks)"
+                ],
+                "imdbid":"tt0772168"
+              },
+              {
+                "title":"Broke",
+                "year":" 2006",
+                "remarks":[
+                  "(special thanks)"
+                ],
+                "imdbid":"tt0845968"
+              }
+            ]
+          },
+          {
+            "section":"Self",
+            "filmography":[
+              {
+                "title":"Made in Hollywood",
+                "year":" 2016",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt0911896"
+              },
+              {
+                "title":"The Late Late Show with James Corden",
+                "year":" 2016",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt4280606"
+              },
+              {
+                "title":"Late Night with Seth Meyers",
+                "year":" 2016",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt3513388"
+              },
+              {
+                "title":"The Late Show with Stephen Colbert",
+                "year":" 2016",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt3697842"
+              },
+              {
+                "title":"Film 2016",
+                "year":" 2016",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt0192897"
+              },
+              {
+                "title":"Good Morning America",
+                "year":" 2013-2016",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt0072506"
+              },
+              {
+                "title":"Jimmy Kimmel Live!",
+                "year":" 2013-2016",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt0320037"
+              },
+              {
+                "title":"Unity",
+                "year":" 2015",
+                "remarks":[
+                  "(Documentary)",
+                  "Narrator (voice)"
+                ],
+                "imdbid":"tt2049636"
+              },
+              {
+                "title":"Inside 'Interstellar'",
+                "year":" 2015",
+                "remarks":[
+                  "(Video documentary)"
+                ],
+                "imdbid":"tt5297406"
+              },
+              {
+                "title":"Reel Junkie",
+                "year":" 2013",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt3234862"
+              },
+              {
+                "title":"Chelsea Lately",
+                "year":" 2013",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt1002838"
+              },
+              {
+                "title":"Conan",
+                "year":" 2013",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt1637574"
+              },
+              {
+                "title":"Real Time with Bill Maher",
+                "year":" 2013",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt0350448"
+              },
+              {
+                "title":"The Tonight Show with Jay Leno",
+                "year":" 2000-2013",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt0103569"
+              },
+              {
+                "title":"Sesame Street",
+                "year":" 2012",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt0063951"
+              },
+              {
+                "title":"AFI Life Achievement Award: A Tribute to Morgan Freeman",
+                "year":" 2011",
+                "remarks":[
+                  "(TV Movie)"
+                ],
+                "imdbid":"tt1974199"
+              },
+              {
+                "title":"At the Movies",
+                "year":" 2010",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt0421288"
+              },
+              {
+                "title":"Hollywood Salutes Matt Damon: An American Cinematheque Tribute",
+                "year":" 2010",
+                "remarks":[
+                  "(TV Movie)"
+                ],
+                "imdbid":"tt1628741"
+              },
+              {
+                "title":"Novum Nieuws Entertainment",
+                "year":" 2010",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt4292828"
+              },
+              {
+                "title":"Plymouth Rock Studios: The Series",
+                "year":" 2009",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt1589852"
+              },
+              {
+                "title":"12th Annual Prism Awards",
+                "year":" 2008",
+                "remarks":[
+                  "(TV Special)"
+                ],
+                "imdbid":"tt1281365"
+              },
+              {
+                "title":"Stand Up to Cancer",
+                "year":" 2008",
+                "remarks":[
+                  "(TV Movie)"
+                ],
+                "imdbid":"tt1269602"
+              },
+              {
+                "title":"Breakfast",
+                "year":" 2008",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt0262152"
+              },
+              {
+                "title":"La noche de los Oscar",
+                "year":" 2008",
+                "remarks":[
+                  "(TV Movie)"
+                ],
+                "imdbid":"tt1192882"
+              },
+              {
+                "title":"The 80th Annual Academy Awards",
+                "year":" 2008",
+                "remarks":[
+                  "(TV Special)"
+                ],
+                "imdbid":"tt1103965"
+              },
+              {
+                "title":"Capturing Authenticity: Casting 'Gone Baby Gone'",
+                "year":" 2008",
+                "remarks":[
+                  "(Video short)"
+                ],
+                "imdbid":"tt5285532"
+              },
+              {
+                "title":"Going Home: Behind the Scenes with Ben Affleck",
+                "year":" 2008",
+                "remarks":[
+                  "(Video short)"
+                ],
+                "imdbid":"tt5285510"
+              },
+              {
+                "title":"Entertainment Tonight",
+                "year":" 2007-2008",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt0081857"
+              },
+              {
+                "title":"The Oprah Winfrey Show",
+                "year":" 2008",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt0090493"
+              },
+              {
+                "title":"13th Annual Critics' Choice Awards",
+                "year":" 2008",
+                "remarks":[
+                  "(TV Special)"
+                ],
+                "imdbid":"tt1171215"
+              },
+              {
+                "title":"13th Annual Critics' Choice Awards Red Carpet Premiere",
+                "year":" 2008",
+                "remarks":[
+                  "(TV Special)"
+                ],
+                "imdbid":"tt1185338"
+              },
+              {
+                "title":"The Assassination of Jesse James: Death of an Outlaw",
+                "year":" 2008",
+                "remarks":[
+                  "(Video documentary short)"
+                ],
+                "imdbid":"tt1201984"
+              },
+              {
+                "title":"Live! with Kelly",
+                "year":" 2007",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt0096636"
+              },
+              {
+                "title":"Late Show with David Letterman",
+                "year":" 2007",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt0106053"
+              },
+              {
+                "title":"Up Close with Carrie Keagan",
+                "year":" 2007",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt1434322"
+              },
+              {
+                "title":"Gone Baby Gone Featurette",
+                "year":" 2007",
+                "remarks":[
+                  "(Video documentary)"
+                ],
+                "imdbid":"tt1130985"
+              },
+              {
+                "title":"HBO First Look",
+                "year":" 2001-2007",
+                "remarks":[
+                  "(TV Series documentary)"
+                ],
+                "imdbid":"tt0318220"
+              },
+              {
+                "title":"4Real",
+                "year":" 2007",
+                "remarks":[
+                  "(TV Series documentary)"
+                ],
+                "imdbid":"tt0968776"
+              },
+              {
+                "title":"Sur les traces de Gerry",
+                "year":" 2004",
+                "remarks":[
+                  "(Video documentary short)"
+                ],
+                "imdbid":"tt0426247"
+              },
+              {
+                "title":"Saltlake Van Sant",
+                "year":" 2003",
+                "remarks":[
+                  "(Video documentary short)"
+                ],
+                "imdbid":"tt0432042"
+              },
+              {
+                "title":"Rotten TV",
+                "year":" 2000",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt0326485"
+              },
+              {
+                "title":"Gomorron",
+                "year":" 1998",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt0930831"
+              }
+            ]
+          },
+          {
+            "section":"Archive footage",
+            "filmography":[
+              {
+                "title":"Cinema 3",
+                "year":" 2008",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt0111920"
+              },
+              {
+                "title":"Oscar, que empiece el espectáculo",
+                "year":" 2008",
+                "remarks":[
+                  "(TV Movie documentary)",
+                  "(uncredited)"
+                ],
+                "imdbid":"tt1183149"
+              },
+              {
+                "title":"Gomorron",
+                "year":" 2002",
+                "remarks":[
+                  "(TV Series)"
+                ],
+                "imdbid":"tt0930831"
+              }
+            ]
+          }
+        ],
+        "trivia":[
+          "Younger brother of actor Ben Affleck.",
+          "Attended Columbia University, majoring in Physics. During this time he lived with his grandma in Manhattan.",
+          "His ancestry is English, German, Scottish, Irish, Northern Irish (Scots-Irish), and distant Swiss. His maternal great-grandfather, Joseph Raymond Boldt, was born in Rhode Island, to German immigrants, and his maternal great-grandmother, Anne Rita Lenihan, was Irish, born in County Down.",
+          "In the 2003 March issue of Nylon Magazine, when questioned Casey Affleck admitted to not being proud of two movies in his career: Drowning Mona (2000) and Soul Survivors (2001).",
+          "Is a vegan.",
+          "Best friends with his brother-in-law Joaquin Phoenix.",
+          "Appeared with brother Ben Affleck in the movies Chasing Amy (1997), Good Will Hunting (1997) and 200 Cigarettes (1999).",
+          "His older brother, Ben Affleck, and his fiancée's older brother, River Phoenix, have both played versions of characters played by Harrison Ford. Ben Affleck played Jack Ryan in The Sum of All Fears (2002), and River Phoenix played the young Indy in Indiana Jones and the Last Crusade (1989).",
+          "Brother-in-law of Jennifer Garner, Joaquin Phoenix, River Phoenix, Rain Phoenix and Liberty Phoenix.",
+          "He and his brother Ben Affleck have both had on-screen romances with Liv Tyler: Lonesome Jim (2005), Armageddon (1998) and Jersey Girl (2004).",
+          "His mother purchased work by Boston acclaimed photographer Brian Carroll as a gift to Casey, for the back-to-back premieres of Gone Baby Gone (2007) and The Assassination of Jesse James by the Coward Robert Ford (2007).",
+          "Fluent in Spanish.",
+          "Became a father for the 1st time at age 28 when his fiancée Summer Phoenix gave birth to their son Indiana August Affleck on May 31, 2004.",
+          "Became a father for the 2nd time at age 32 when his wife Summer Phoenix gave birth to their son Atticus Affleck on January 12, 2008.",
+          "Graduated from Cambridge Rindge and Latin School in June 1993.",
+          "Uncle of Violet Affleck, Seraphina Rose Elizabeth Affleck and Samuel Garner Affleck."
+        ],
+        "spouse":[
+          {
+            "nameId":{
+              "name":"Summer Phoenix",
+              "id":"nm0001619"
+            },
+            "dateFrom":"3 June 2006",
+            "dateTo":"present",
+            "childrens":"2 children",
+            "status":null
+          }
+        ],
+        "tradeMark":[
+          "Manipulates features to accurately express emotions",
+          "Wide blue eyes",
+          "Often plays inexperienced characters caught in situations out of their depth",
+          "Frequently plays characters with deep moral conflicts",
+          "Low mumbling voice reminiscent of Marlon Brando"
+        ],
+        "personalQuotes":[
+          "[on his family's support of his animal rights beliefs] My family would be supportive if I said I wanted to be a Martian, wear only banana skins, make love to ashtrays, and eat tree bark.",
+          "[2007 New York Magazine interview, on how he's avoided being typed so far] I don't think journalists have much impression of me. I haven't really done all that many interviews, partly by choice, and partly because no one's been all that interested. Now things are getting different [referring to the success of The Assassination of Jesse James by the Coward Robert Ford (2007)].",
+          "[on his working relationship with brother Ben Affleck] It was easy mostly because we kind of just spoke the same language and were very comfortable saying to each other, \"I think that's a terrible idea . . . \" or \"That's a great idea but what if . . . ?\" We could sort of build on each other's excitement. We had a kind of shorthand.",
+          "(About breaking his arm) The doctor operated for six hours and saved my arm. I mean, I can't speak for my arm. It might have rather been set free.",
+          "I believe veganism can be beneficial for the individual and the world, and of course the animal, but belief is like laying in the dark with someone and telling them you love them and hearing nothing back. So I've never had the confidence to get on a soapbox and tell someone else what to do",
+          "I love taking a risk. If I'm a little bit afraid of a part, that's the first indication that it's going to be good for me. If I can't find that element of risk in the material, I always hope that the director is going to be open to taking chances. With this movie ['Out of The Furnace'] I was lucky enough to have both elements. The material was different, difficult and a little bit scary. As a director Scott [Cooper] fostered an environment where risk was the common currency. We knew we were going to take risks, even if it meant making mistakes. And that's the best kind of experience.",
+          "[on working with Christopher Nolan in Interstellar] There is not much I can say except that it's pretty incredible to work with somebody who is on top of his game. He is not only very talented, but also very successful. He has the keys to the kingdom in a way. He's got every tool in his disposal; every tool he wants. It makes for a very interesting set. I kinda felt privileged just to be hanging out and watching him work. He sets a really nice tone on the set; everyone is very relaxed. It probably costs a million dollar a minute just to be there."
+        ]
+      }
+    ]
+  },
+  "about":{
+    "version":"2.25.1",
+    "serverTime":"2016/09/14 10:30:22"
+  }
+}

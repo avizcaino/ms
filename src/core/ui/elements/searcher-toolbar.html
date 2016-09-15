@@ -1,0 +1,17 @@
+<template>
+  <paper-toolbar show.bind="!searcher">
+    <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+    <span class="title">${'home.toolbar.title' | t}</span>
+    <paper-icon-button icon="search" cmd="command.bind: toggleSearcherCommand"></paper-icon-button>
+    <paper-progress class="middle fit" value="60"></paper-progress>
+  </paper-toolbar>
+
+  <paper-toolbar show.bind="searcher">
+    <div class="layout horizontal searcher">
+      <paper-icon-button icon="arrow-back" cmd="command.bind: toggleSearcherCommand"></paper-icon-button>
+      <paper-input placeholder="${searcher.placeholder | t}" class="searcher-input" value.two-way="searchString" no-label-float on-enter="target: searcher-trigger"></paper-input>
+      <paper-icon-button icon="close" cmd="command.bind: clearSearcherCommand"></paper-icon-button>
+      <span id="searcher-trigger" cmd="command.bind: searchCommand"></span>
+    </div>
+  </paper-toolbar>
+</template>

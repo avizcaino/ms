@@ -1,28 +1,19 @@
 <style is="custom-style">
   :root {
-    /*--primary-text-color: var(--paper-grey-900);
-    --primary-background-color: #ffffff;
-    --secondary-text-color: #737373;
-    --disabled-text-color: #9b9b9b;
-    --divider-color: #dbdbdb;
-    --primary-color: var(--paper-indigo-500);
-    --light-primary-color: var(--paper-indigo-100);
-    --dark-primary-color: var(--paper-indigo-700);
-    --accent-color: var(--paper-pink-a200);
-    --light-accent-color: var(--paper-pink-a100);
-    --dark-accent-color: var(--paper-pink-a400);*/
     --primary-custom-background-color: var(--paper-grey-900);
     --secondary-custom-background-color: var(--paper-grey-800);
+    --terciary-custom-background-color: var(--paper-grey-50);
     --primary-custom-text-color: var(--paper-grey-200);
     --secondary-custom-text-color: var(--paper-grey-400);
     --terciary-custom-text-color: var(--paper-grey-600);
+    --fourth-custom-text-color: var(--paper-grey-800);
   }
 
   body, html {
     font-size: 14px;
     font-family: 'Roboto-Regular';
     height: 100%;
-    background-color: var(--primary-custom-background-color);
+    background-color: var(--terciary-custom-background-color);
     color: var(--primary-custom-text-color);
   }
 
@@ -41,7 +32,7 @@
   }
 
   body .spinner paper-spinner-lite{
-    --paper-spinner-color: var(--primary-custom-text-color);
+    --paper-spinner-color: var(--terciary-custom-text-color);
     --paper-spinner-stroke-width: 0.25rem;
     height: 8rem;
     width: 8rem;
@@ -63,6 +54,15 @@
     z-index:3;
   }
 
+  .searcher, .searcher-input{
+    width: 100%;
+  }
+
+  .searcher-input{
+    --paper-input-container-focus-color: var(--fourth-custom-text-color);
+    --paper-input-container-color: var(--terciary-custom-text-color);
+    --paper-input-container-input-color: var(--terciary-custom-text-color);
+  }
   /******************************************
   *   LOGIN
   *******************************************/
@@ -80,9 +80,9 @@
   }
 
   .login paper-card paper-input {
-    --paper-input-container-focus-color: var(--secondary-custom-text-color);
+    --paper-input-container-focus-color: var(--fourth-custom-text-color);
     --paper-input-container-color: var(--terciary-custom-text-color);
-    --paper-input-container-input-color: var(--primary-custom-text-color);
+    --paper-input-container-input-color: var(--terciary-custom-text-color);
   }
 
   .login paper-card .card-actions{
@@ -131,7 +131,6 @@
     background: none;
     color: var(--primary-custom-text-color);
     padding-bottom:0;
-    margin-bottom:8px;
   }
 
   user-toolbar .sidebar-profile-menu .sidebar-profile-fullname{
@@ -153,5 +152,19 @@
     background-color: var(--secondary-custom-background-color);
     color: var(--primary-custom-text-color);
     font-size: 14px;
+  }
+
+  .sidebar-sections {
+    --paper-menu-background-color:var(--primary-custom-background-color);
+    --paper-menu-color: var(--primary-custom-text-color);
+    --paper-menu-selected-item: red;
+    --paper-menu-focused-item: darkblue;
+    margin-top: 1px;
+  }
+
+  .sidebar-sections paper-item{
+    --paper-item: {
+      font-size: 14px;
+    }
   }
 </style>

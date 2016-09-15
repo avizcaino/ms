@@ -3,5 +3,5 @@
  */
 import {FrameworkConfiguration} from "aurelia-framework";
 export function configure(fc:FrameworkConfiguration) {
-  fc.globalResources(['./command/command-ext', './behaviors/on-enter']);
+  fc.globalResources(['./command/command-ext', './behaviors/on-enter', './elements/searcher-toolbar']);
 }

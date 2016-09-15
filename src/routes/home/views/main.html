@@ -19,7 +19,7 @@
               </div>
             </paper-item>
             <paper-menu class="menu-content">
-              <paper-icon-item cmd="command.bind: logoutCommand">
+              <paper-icon-item class="logout-button" cmd="command.bind: logoutCommand">
                 ${'home.sidebar.logout' | t}
                 <iron-icon icon="exit-to-app" item-icon></iron-icon>
               </paper-icon-item>
@@ -27,24 +27,16 @@
           </paper-submenu>
         </paper-menu>
       </user-toolbar>
-      <paper-menu class="menu-nav">
+      <paper-menu class="menu-nav sidebar-sections">
         <paper-item cmd="command.bind: navigateHomeCommand">${'home.sidebar.home' | t}</paper-item>
-        <paper-submenu opened>
-        <paper-menu class="sidebar-sections menu-content">
-          <paper-item>${'home.sidebar.watchlist' | t}</paper-item>
-          <paper-item>${'home.sidebar.ratings' | t}</paper-item>
-          <paper-item>${'home.sidebar.lists' | t}</paper-item>
-        </paper-menu>
-        </paper-submenu>
+        <paper-item>${'home.sidebar.watchlist' | t}</paper-item>
+        <paper-item>${'home.sidebar.ratings' | t}</paper-item>
+        <paper-item>${'home.sidebar.lists' | t}</paper-item>
       </paper-menu>
     </paper-header-panel>
     <paper-header-panel main>
-      <paper-toolbar>
-        <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
-        <div>Title</div>
-        <paper-progress class="middle fit" value="60"></paper-progress>
-      </paper-toolbar>
-      <div> Main content... </div>
+      <searcher-toolbar></searcher-toolbar>
+      <router-view></router-view>
     </paper-header-panel>
   </paper-drawer-panel>
 </template>
