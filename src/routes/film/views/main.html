@@ -1,7 +1,23 @@
 <template>
   <link rel="import" href="./styles/film-styles.html">
   <film>
-    <h1>${film.title}</h1>
+    <paper-card class="layout horizontal film-info">
+      <div class="rate-content">
+        <div class="card-content">
+          <div class="rate-header">${film.title}</div>
+          <div class="rate-name">${film.title}</div>
+          <div>Live from space</div>
+        </div>
+        <div class="card-actions">
+          <paper-icon-button class="rate-icon" icon="star"></paper-icon-button>
+          <paper-icon-button class="rate-icon" icon="star"></paper-icon-button>
+          <paper-icon-button class="rate-icon" icon="star"></paper-icon-button>
+          <paper-icon-button class="rate-icon" icon="star"></paper-icon-button>
+          <paper-icon-button class="rate-icon" icon="star"></paper-icon-button>
+        </div>
+      </div>
+      <div class="rate-image" background-image.bind="film.urlPoster"></div>
+    </paper-card>
     <div role="listbox">
       <paper-icon-item repeat.for="actor of film.actors">
         <div class="actor-profile-photo" background-image.bind="actor.urlPhoto" item-icon></div>
