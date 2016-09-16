@@ -2,5 +2,14 @@
   <link rel="import" href="./styles/film-styles.html">
   <film>
     <h1>${film.title}</h1>
+    <div role="listbox">
+      <paper-icon-item repeat.for="actor of film.actors">
+        <div class="actor-profile-photo" background-image.bind="actor.urlPhoto" item-icon></div>
+        <paper-item-body two-line>
+          <div>${actor.actorName}</div>
+          <div secondary>${actor.character}</div>
+        </paper-item-body>
+      </paper-icon-item>
+    </div>
   </film>
 </template>
