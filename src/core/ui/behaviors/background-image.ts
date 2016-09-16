@@ -11,7 +11,6 @@ export class BackgroundImage{
   constructor(private _element:Element){}
 
   valueChanged(newValue){
-    console.log(newValue);
     (<HTMLElement>this._element).style.backgroundImage = 'url(' + newValue +')';
   }
 }

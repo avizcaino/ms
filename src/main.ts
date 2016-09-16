@@ -9,6 +9,7 @@ export function configure(aurelia: Aurelia) {
     .plugin('aurelia-polymer')
     .feature('core/initialization')
     .feature('core/ui')
+    .feature('core/interaction')
     .plugin('aurelia-i18n', (instance) => {
       // register backend plugin
       instance.i18next.use(Backend);

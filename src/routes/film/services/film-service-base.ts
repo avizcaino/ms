@@ -6,14 +6,16 @@ import {Film} from "film-model";
 import {autoinject} from "aurelia-dependency-injection";
 import {HttpClient} from "aurelia-fetch-client";
 import {MediaType} from "film-model";
+import {EventAggregator} from "aurelia-event-aggregator";
+import {Events} from "../../../core/events/events";
+import {NotificationType} from "notification-model";
 
 @autoinject
 export class FilmServiceBase implements IFilmService{
   protected filmUri: string;
   private _cachedFilm: Film;
-  private _getFilmByNamePromise: Promise<Film>;
 
-  constructor(private _httpClient: HttpClient){}
+  constructor(private _httpClient: HttpClient, private _ea: EventAggregator){}
 
   getFilmById(id: string): Promise<Film>{
     if(this._cachedFilm.idIMDB == id)
@@ -23,17 +25,15 @@ export class FilmServiceBase implements IFilmService{
   }
 
   getFilmByName(name: string): Promise<Film>{
-    if(!this._getFilmByNamePromise)
-      this._getFilmByNamePromise = this.queryFilm(name);
-    return this._getFilmByNamePromise
-      .then(() => this._cachedFilm);
+    return this.queryFilm(name);
   }
 
   private queryFilm(name: string): Promise<Film>{
     return this._httpClient.fetch(this.getQueryUri(name))
       .then(r => r.json())
       .then(r => this.adaptFilm(r))
-      .then(r => this._cachedFilm = r);
+      .then(r => this._cachedFilm = r)
+      .catch(e => console.log(e));
   }
 
   private adaptFilm(rawFilms: any): Film{

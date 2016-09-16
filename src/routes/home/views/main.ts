@@ -12,6 +12,7 @@ import {Router} from "aurelia-router";
 import {FilmService} from "film-service";
 import {Film} from "film-model";
 import {LoginService} from "login-service";
+import {NotificationType} from "notification-model";
 
 @autoinject
 export class HomeViewModel{
@@ -51,8 +52,11 @@ export class HomeViewModel{
   private doSearch(searchString){
     return this._filmService.getFilmByName(searchString)
       .then((film: Film) => {
-        this._router.navigateToRoute('film', {filmId: film.idIMDB})
-      });
+        if(film)
+          this._router.navigateToRoute('film', {filmId: film.idIMDB})
+        else
+          this._ea.publish(Events.notify, {message: 'notification.not-found', type: NotificationType.Info});
+      })
   }
 
   deactivate(){
