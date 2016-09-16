@@ -19,5 +19,10 @@
       "ratings": "Ratings",
       "list": "List"
     }
+  },
+  "film":{
+    "service":{
+      "no-films-cached": "No films in DB"
+    }
   }
 }

@@ -42,8 +42,6 @@ System.config({
     "i18next-xhr-backend": "npm:i18next-xhr-backend@1.1.0",
     "intl": "npm:intl@1.2.4",
     "jquery": "npm:jquery@2.2.4",
-    "login-service": "routes/login/services/login-service-local",
-    "resources-service": "routes/home/services/resources-service-local",
     "text": "github:systemjs/plugin-text@0.0.8",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"

@@ -10,7 +10,7 @@ declare module 'login-service'{
     getUserInfo(username: string): Promise<UserInfo>;
   }
 
-  export class LoginService{
+  export class LoginService implements ILoginService{
     login(credentials: Credentials): Promise<boolean>;
     logout(): Promise<boolean>;
     getUserInfo(username: string): Promise<UserInfo>;

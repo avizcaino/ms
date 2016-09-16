@@ -6,12 +6,12 @@ import {autoinject} from "aurelia-dependency-injection";
 import {EventAggregator} from "aurelia-event-aggregator";
 import {Events} from "../../../core/events/events";
 import {UserInfo} from "login-model";
-import {LoginService} from "../../login/services/login-service-local";
 import {Subscription} from "aurelia-event-aggregator";
-import {ResourcesService} from "../services/resources-service-local";
 import {RouterConfiguration} from "aurelia-router";
 import {Router} from "aurelia-router";
-import {ResourceType} from "resources-model";
+import {FilmService} from "film-service";
+import {Film} from "film-model";
+import {LoginService} from "login-service";
 
 @autoinject
 export class HomeViewModel{
@@ -19,7 +19,7 @@ export class HomeViewModel{
   public logoutCommand: DelegateCommandVoid;
   private _subscribers: Subscription[] = [];
 
-  constructor(private _router: Router, private _ea: EventAggregator, private _loginService: LoginService, public userInfo: UserInfo, private _resourcesService: ResourcesService){
+  constructor(private _router: Router, private _ea: EventAggregator, private _loginService: LoginService, public userInfo: UserInfo, private _filmService: FilmService){
     this.navigateHomeCommand = new DelegateCommandVoid(this.doNavigateHome.bind(this));
     this.logoutCommand = new DelegateCommandVoid(this.doLogout.bind(this));
   }
@@ -49,17 +49,9 @@ export class HomeViewModel{
   }
 
   private doSearch(searchString){
-    this._resourcesService.getResourceByName(searchString)
-      .then(resources => {
-        if(resources.length == 1)
-          switch(resources[0].type){
-            case ResourceType.film:
-              this._router.navigateToRoute('film', {filmId: resources[0].data.idIMDB});
-              break;
-            case ResourceType.person:
-              this._router.navigate('person', resources[0].data.idIMDB);
-              break;
-          }
+    return this._filmService.getFilmByName(searchString)
+      .then((film: Film) => {
+        this._router.navigateToRoute('film', {filmId: film.idIMDB})
       });
   }
 
