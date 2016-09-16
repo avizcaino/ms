@@ -15,6 +15,13 @@ export class FilmServiceBase implements IFilmService{
 
   constructor(private _httpClient: HttpClient){}
 
+  getFilmById(id: string): Promise<Film>{
+    if(this._cachedFilm.idIMDB == id)
+      return Promise.resolve(this._cachedFilm);
+    else
+      return Promise.reject('film.service.film-not-found');
+  }
+
   getFilmByName(name: string): Promise<Film>{
     if(!this._getFilmByNamePromise)
       this._getFilmByNamePromise = this.queryFilm(name);

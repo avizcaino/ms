@@ -22,7 +22,8 @@
   },
   "film":{
     "service":{
-      "no-films-cached": "No films in DB"
+      "no-films-cached": "No films in DB",
+      "film-not-found": "Film not found"
     }
   }
 }

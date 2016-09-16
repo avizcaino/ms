@@ -5,9 +5,11 @@ declare module 'film-service'{
   import {Film} from "film-model";
   export interface IFilmService{
     getFilmByName(name: string): Promise<Film>;
+    getFilmById(id: string): Promise<Film>;
   }
 
   export class FilmService implements IFilmService{
     getFilmByName(name: string): Promise<Film>;
+    getFilmById(id: string): Promise<Film>;
   }
 }
