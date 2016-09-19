@@ -4,7 +4,6 @@
 import {EventAggregator} from "aurelia-event-aggregator";
 import {Events} from "../../events/events";
 import {autoinject} from "aurelia-dependency-injection";
-import {bindable} from "aurelia-templating";
 import {Subscription} from "aurelia-event-aggregator";
 import {Notification} from "notification-model";
 import {NotificationType} from "notification-model";
@@ -36,6 +35,8 @@ export class ToastTypeClassValueConverter{
         return 'error-toast';
       case NotificationType.Info:
         return 'info-toast';
+      case NotificationType.Success:
+        return 'success-toast';
     }
   }
 }

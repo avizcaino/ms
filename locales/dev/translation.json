@@ -28,5 +28,9 @@
   },
   "notification":{
     "not-found": "Resource not found"
+  },
+
+  "watchlist":{
+    "film-added": "{{film}} added to Watchlist!"
   }
 }

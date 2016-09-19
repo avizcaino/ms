@@ -4,6 +4,7 @@
 declare module 'notification-model'{
   export interface Notification{
     type: NotificationType;
+    params: any;
     message: string;
   }
 

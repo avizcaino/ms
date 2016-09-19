@@ -7,8 +7,6 @@ import {autoinject} from "aurelia-dependency-injection";
 import {HttpClient} from "aurelia-fetch-client";
 import {MediaType} from "film-model";
 import {EventAggregator} from "aurelia-event-aggregator";
-import {Events} from "../../../core/events/events";
-import {NotificationType} from "notification-model";
 
 @autoinject
 export class FilmServiceBase implements IFilmService{
