@@ -34,7 +34,7 @@ export class FilmServiceBase implements IFilmService{
     return this.queryFilm(name);
   }
 
-  private queryFilm(name: string): Promise<Film>{
+  protected queryFilm(name: string): Promise<Film>{
     return this._httpClient.fetch(this.getQueryUri(name))
       .then(r => r.json())
       .then(r => this.adaptFilm(r))
@@ -42,9 +42,9 @@ export class FilmServiceBase implements IFilmService{
       .catch(e => console.log(e));
   }
 
-  private adaptFilm(rawFilms: any): Film{
+  protected adaptFilm(rawFilm: any): Film{
     let film: Film = <any>{};
-    let data = (<any>rawFilms.data).movies[0];
+    let data = (<any>rawFilm.data).movies[0];
     for(let prop in data){
       if(prop == 'releaseDate'){
         film[prop] = new Date(data[prop]);
@@ -63,7 +63,7 @@ export class FilmServiceBase implements IFilmService{
     return film;
   }
 
-  private getQueryUri(name?: string): Request | string{
+  protected getQueryUri(name?: string): Request | string{
     if(name)
       return this.filmUri + name + '.json';
     else

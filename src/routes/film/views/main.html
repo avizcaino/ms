@@ -2,7 +2,7 @@
   <link rel="import" href="./styles/film-styles.html">
   <film>
     <div class="layout horizontal wrap">
-      <div>
+      <div class="flex">
         <paper-card heading="${film.title}" image="${film.urlPoster}" alt="${film.title}">
           <div class="card-content">
             Emmentaler or Emmental is a yellow, medium-hard cheese that originated in the area around Emmental, Switzerland. It is one of the cheeses of Switzerland, and is sometimes known as Swiss cheese.
@@ -13,7 +13,7 @@
           </div>
         </paper-card>
       </div>
-      <div role="listbox">
+      <div class="flex-2" role="listbox">
         <paper-icon-item repeat.for="actor of film.actors">
           <div class="actor-profile-photo" background-image.bind="actor.urlPhoto" item-icon></div>
           <paper-item-body two-line>
