@@ -42,11 +42,11 @@ export class HomeViewModel{
   }
 
   private doNavigateHome(){
-    this._ea.publish(Events.navigateToHome);
+    //this._ea.publish(Events.navigateToHome);
   }
 
   private doLogout(){
-    this._ea.publish(Events.logout);
+    this._ea.publish(Events.userLoggedOut);
   }
 
   private doSearch(searchString){

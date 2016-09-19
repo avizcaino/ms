@@ -1,31 +1,27 @@
 <template>
   <link rel="import" href="./styles/film-styles.html">
   <film>
-    <paper-card class="layout horizontal film-info">
-      <div class="rate-content">
-        <div class="card-content">
-          <div class="rate-header">${film.title}</div>
-          <div class="rate-name">${film.title}</div>
-          <div>Live from space</div>
-        </div>
-        <div class="card-actions">
-          <paper-icon-button class="rate-icon" icon="star"></paper-icon-button>
-          <paper-icon-button class="rate-icon" icon="star"></paper-icon-button>
-          <paper-icon-button class="rate-icon" icon="star"></paper-icon-button>
-          <paper-icon-button class="rate-icon" icon="star"></paper-icon-button>
-          <paper-icon-button class="rate-icon" icon="star"></paper-icon-button>
-        </div>
+    <div class="layout horizontal wrap">
+      <div>
+        <paper-card heading="${film.title}" image="${film.urlPoster}" alt="${film.title}">
+          <div class="card-content">
+            Emmentaler or Emmental is a yellow, medium-hard cheese that originated in the area around Emmental, Switzerland. It is one of the cheeses of Switzerland, and is sometimes known as Swiss cheese.
+          </div>
+          <div class="card-actions">
+            <paper-button>Share</paper-button>
+            <paper-button>Explore!</paper-button>
+          </div>
+        </paper-card>
       </div>
-      <div class="rate-image" background-image.bind="film.urlPoster"></div>
-    </paper-card>
-    <div role="listbox">
-      <paper-icon-item repeat.for="actor of film.actors">
-        <div class="actor-profile-photo" background-image.bind="actor.urlPhoto" item-icon></div>
-        <paper-item-body two-line>
-          <div>${actor.actorName}</div>
-          <div secondary>${actor.character}</div>
-        </paper-item-body>
-      </paper-icon-item>
+      <div role="listbox">
+        <paper-icon-item repeat.for="actor of film.actors">
+          <div class="actor-profile-photo" background-image.bind="actor.urlPhoto" item-icon></div>
+          <paper-item-body two-line>
+            <div>${actor.actorName}</div>
+            <div secondary>${actor.character}</div>
+          </paper-item-body>
+        </paper-icon-item>
+      </div>
     </div>
   </film>
 </template>

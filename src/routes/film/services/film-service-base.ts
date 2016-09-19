@@ -18,10 +18,16 @@ export class FilmServiceBase implements IFilmService{
   constructor(private _httpClient: HttpClient, private _ea: EventAggregator){}
 
   getFilmById(id: string): Promise<Film>{
-    if(this._cachedFilm.idIMDB == id)
+    if(this._cachedFilm && this._cachedFilm.idIMDB == id)
       return Promise.resolve(this._cachedFilm);
-    else
-      return Promise.reject('film.service.film-not-found');
+    else{
+      return this._httpClient.fetch(this.getQueryUri(id))
+        .then(r => r.json())
+        .then(r => this.adaptFilm(r))
+        .then(r => this._cachedFilm = r)
+        .catch(e => console.log(e));
+    }
+      //return Promise.reject('film.service.film-not-found');
   }
 
   getFilmByName(name: string): Promise<Film>{
@@ -38,7 +44,7 @@ export class FilmServiceBase implements IFilmService{
 
   private adaptFilm(rawFilms: any): Film{
     let film: Film = <any>{};
-    let data = rawFilms.data.movies[0];
+    let data = (<any>rawFilms.data).movies[0];
     for(let prop in data){
       if(prop == 'releaseDate'){
         film[prop] = new Date(data[prop]);
