@@ -32,5 +32,14 @@
 
   "watchlist":{
     "film-added": "{{film}} added to Watchlist!"
+  },
+
+  "dialog":{
+    "confirm":{
+      "label": "Confirm"
+    },
+    "dismiss":{
+      "label": "Dismiss"
+    }
   }
 }

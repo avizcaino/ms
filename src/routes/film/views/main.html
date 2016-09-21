@@ -1,7 +1,32 @@
 <template>
   <link rel="import" href="./styles/film-styles.html">
   <film>
-    <div class="layout horizontal wrap">
+    <div class="layout vertical full-height">
+      <div class="layout horizontal flex">
+        <div class="flex film-poster" background-image.bind="film.urlPoster"></div>
+        <div class="flex-3 layout vertical">
+          <div class="flex">
+            <h1>${film.title}</h1>
+            <span>Director: </span><span>${film.directors | arrayToString:'name'}</span>
+            <span>Writer: </span><span>${film.writers | arrayToString:'name'}</span>
+          </div>
+          <div class="flex">
+            <paper-icon-button icon="star" cmd="command.bind: openRaterCommand"></paper-icon-button>
+            <paper-button cmd="command.bind: addToWatchlistCommand; parameter.bind: film">Add to Watchlist</paper-button>
+          </div>
+        </div>
+      </div>
+      <div class="flex-3" role="listbox">
+        <!--paper-icon-item repeat.for="actor of film.actors">
+          <div class="actor-profile-photo" background-image.bind="actor.urlPhoto" item-icon></div>
+          <paper-item-body two-line>
+            <div>${actor.actorName}</div>
+            <div secondary>${actor.character}</div>
+          </paper-item-body>
+        </paper-icon-item-->
+      </div>
+    </div>
+    <!--div class="layout horizontal wrap">
       <div class="flex">
         <paper-card heading="${film.title}" image="${film.urlPoster}" alt="${film.title}">
           <div class="card-content">
@@ -22,6 +47,6 @@
           </paper-item-body>
         </paper-icon-item>
       </div>
-    </div>
+    </div-->
   </film>
 </template>

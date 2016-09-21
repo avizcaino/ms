@@ -4,6 +4,7 @@
 import {FrameworkConfiguration} from "aurelia-framework";
 export function configure(fc:FrameworkConfiguration) {
   fc.globalResources([
+    './converters/array-converters',
     './command/command-ext',
     './behaviors/on-enter',
     './behaviors/background-image',

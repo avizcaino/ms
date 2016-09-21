@@ -4,5 +4,6 @@
 import {FrameworkConfiguration} from "aurelia-framework";
 export function configure(fc:FrameworkConfiguration) {
   fc.globalResources([
-    './notification/toast-notification']);
+    './notification/toast-notification',
+    './dialog/modal-dialog']);
 }
