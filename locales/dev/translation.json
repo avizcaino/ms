@@ -31,7 +31,8 @@
   },
 
   "watchlist":{
-    "film-added": "{{film}} added to Watchlist!"
+    "film-added": "{{film}} added to Watchlist!",
+    "film-removed": "{{film}} removed from Watchlist!"
   },
 
   "dialog":{

@@ -12,7 +12,8 @@
           </div>
           <div class="flex">
             <paper-icon-button icon="star" cmd="command.bind: openRaterCommand"></paper-icon-button>
-            <paper-button cmd="command.bind: addToWatchlistCommand; parameter.bind: film">Add to Watchlist</paper-button>
+            <paper-icon-button if.bind="!film.inWatchlist" cmd="command.bind: addToWatchlistCommand; parameter.bind: film" icon="bookmark-border"></paper-icon-button>
+            <paper-icon-button if.bind="film.inWatchlist" cmd="command.bind: deleteFromWatchlistCommand; parameter.bind: film" icon="bookmark"></paper-icon-button>
           </div>
         </div>
       </div>

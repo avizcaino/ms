@@ -17,11 +17,13 @@ export class FilmViewModel{
   public film: Film;
   public getActorInfoCommand: DelegateCommand<FilmActor>;
   public addToWatchlistCommand: DelegateCommand<Film>;
+  public deleteFromWatchlistCommand: DelegateCommand<Film>;
   public openRaterCommand: DelegateCommandVoid;
 
   constructor(private _filmService: FilmService, private _ea: EventAggregator){
     this.getActorInfoCommand = new DelegateCommand<FilmActor>(this.getActorInfo.bind(this));
     this.addToWatchlistCommand = new DelegateCommand<Film>(this.addToWatchlist.bind(this));
+    this.deleteFromWatchlistCommand = new DelegateCommand<Film>(this.deleteFromWatchlist.bind(this));
     this.openRaterCommand = new DelegateCommandVoid(this.openRater.bind(this));
   }
 
@@ -34,6 +36,10 @@ export class FilmViewModel{
 
   private addToWatchlist(film: Film){
     this._ea.publish(Events.addFilmToWatchlist, film);
+  }
+
+  private deleteFromWatchlist(film: Film){
+    this._ea.publish(Events.removeFilmFromWatchlist, film);
   }
 
   private callback(args){

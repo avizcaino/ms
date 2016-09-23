@@ -11,5 +11,6 @@ export class Events{
   public static search = 'searcher::search';
 
   public static addFilmToWatchlist = 'watchlist::add';
+  public static removeFilmFromWatchlist = 'watchlist::remove';
   public static openDialog = 'dialog::open';
 }

@@ -17,9 +17,23 @@ export class WatchlistServiceBase implements IWatchlistService{
   addFilm(film: Film): Promise<boolean>{
     if(this._watchlist.indexOf(film) == -1){
       this._watchlist.push(film);
+      film.inWatchlist = true;
+      this._ea.publish(Events.notify, {message: 'watchlist.film-added', params: {film: film.title}, type: NotificationType.Success});
+      return Promise.resolve(true);
+    } else {
+      return Promise.reject(null);
     }
-    this._ea.publish(Events.notify, {message: 'watchlist.film-added', params: {film: film.title}, type: NotificationType.Success});
-    return Promise.resolve(true);
+  }
+
+  removeFilm(film: Film): Promise<boolean>{
+    if(this._watchlist.indexOf(film) != -1){
+      this._watchlist.splice(this._watchlist.indexOf(film), 1);
+      film.inWatchlist = false;
+      this._ea.publish(Events.notify, {message: 'watchlist.film-removed', params: {film: film.title}, type: NotificationType.Success});
+      return Promise.resolve(true);
+    } else {
+      return Promise.reject(null);
+    }
   }
 
   getFilms(): Promise<Film[]>{

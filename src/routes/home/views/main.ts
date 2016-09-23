@@ -43,6 +43,7 @@ export class HomeViewModel{
   activate(){
     this._subscribers.push(this._ea.subscribe(Events.search, this.doSearch.bind(this)));
     this._subscribers.push(this._ea.subscribe(Events.addFilmToWatchlist, this.addFilmToWatchlist.bind(this)));
+    this._subscribers.push(this._ea.subscribe(Events.removeFilmFromWatchlist, this.removeFilmFromWatchlist.bind(this)));
     return this._loginService.getUserInfo(this.userInfo.username)
       .then(r => this.userInfo = r);
   }
@@ -71,6 +72,10 @@ export class HomeViewModel{
 
   private addFilmToWatchlist(film: Film): Promise<boolean>{
     return this._watchlistService.addFilm(film);
+  }
+
+  private removeFilmFromWatchlist(film: Film): Promise<boolean>{
+    return this._watchlistService.removeFilm(film);
   }
 
   deactivate(){

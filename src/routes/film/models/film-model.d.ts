@@ -32,7 +32,8 @@ declare module 'film-model'{
     movieTrivia: string[];
     awards: Award[];
     votes: number;
-    type: MediaType
+    type: MediaType;
+    inWatchlist: boolean;
   }
   
   export interface FilmPerson{
