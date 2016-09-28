@@ -1,3 +1,6 @@
 <template>
-  <paper-input label.bind="model.label" value.two-way="model.rating"></paper-input>
+  <div class="layout horizontal center-justified">
+    <paper-slider min="0" max="10" step="0.5" value.two-way="model.rating" pin></paper-slider>
+    <span>${model.rating}</span>
+  </div>
 </template>
