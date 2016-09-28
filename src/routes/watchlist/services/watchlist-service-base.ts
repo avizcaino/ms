@@ -15,7 +15,8 @@ export class WatchlistServiceBase implements IWatchlistService{
   constructor(private _ea: EventAggregator){}
 
   addFilm(film: Film): Promise<boolean>{
-    if(this._watchlist.indexOf(film) == -1){
+    let filmInWatchlist = (<any>this._watchlist).find((f: Film) => f.idIMDB == film.idIMDB);
+    if(!filmInWatchlist){
       this._watchlist.push(film);
       film.inWatchlist = true;
       this._ea.publish(Events.notify, {message: 'watchlist.film-added', params: {film: film.title}, type: NotificationType.Success});
@@ -26,7 +27,8 @@ export class WatchlistServiceBase implements IWatchlistService{
   }
 
   removeFilm(film: Film): Promise<boolean>{
-    if(this._watchlist.indexOf(film) != -1){
+    let filmInWatchlist = (<any>this._watchlist).find((f: Film) => f.idIMDB == film.idIMDB);
+    if(filmInWatchlist){
       this._watchlist.splice(this._watchlist.indexOf(film), 1);
       film.inWatchlist = false;
       this._ea.publish(Events.notify, {message: 'watchlist.film-removed', params: {film: film.title}, type: NotificationType.Success});
