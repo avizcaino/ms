@@ -10,9 +10,8 @@ import {DelegateCommand} from "../../ui/command/command";
 
 @autoinject
 export class ModalDialog{
-  public model: Dialog;
+  public dialog: Dialog;
   public dialogCommand: DelegateCommand<string>;
-  public rate: number = 10;
   private _subscriptions: Subscription[] = [];
 
   constructor(private _ea: EventAggregator, private _element: Element){
@@ -21,7 +20,7 @@ export class ModalDialog{
   }
 
   private openDialog(model){
-    this.model = model;
+    this.dialog = model;
     (<any>this._element.querySelector('paper-dialog')).open();
   }
 
@@ -31,7 +30,7 @@ export class ModalDialog{
         (<any>this._element.querySelector('paper-dialog')).close();
         break;
       case 'dialog-confirm':
-        this.model.callback(this.rate);
+        this.dialog.callback(this.dialog.content.model);
         (<any>this._element.querySelector('paper-dialog')).close();
     }
   }

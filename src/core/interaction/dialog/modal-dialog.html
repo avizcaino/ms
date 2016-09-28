@@ -1,8 +1,11 @@
 <template>
-  <paper-dialog modal.bind="model.options.modal">
-    <h2>${model.title}</h2>
+  <paper-dialog modal.bind="dialog.options.modal">
+    <h2>${dialog.title}</h2>
+    <div class="content">
+      <compose view-model.bind="dialog.content.viewModel" model.bind="dialog.content.model"></compose>
+    </div>
     <div class="buttons">
-      <paper-button repeat.for="action of model.actions" cmd="command.bind: dialogCommand; parameter.bind: action.command">${action.label | t}</paper-button>
+      <paper-button repeat.for="action of dialog.actions" cmd="command.bind: dialogCommand; parameter.bind: action.command">${action.label | t}</paper-button>
     </div>
   </paper-dialog>
 </template>

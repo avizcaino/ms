@@ -5,6 +5,10 @@ declare module 'dialog-model'{
   export interface Dialog{
     title: string;
     callback: (args) => void;
+    content: {
+      viewModel: string,
+      model: any
+    };
     options: DialogOptions;
     actions: DialogAction[];
   }

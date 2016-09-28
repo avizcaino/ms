@@ -42,8 +42,8 @@ export class FilmViewModel{
     this._ea.publish(Events.removeFilmFromWatchlist, film);
   }
 
-  private callback(args){
-    alert(args);
+  private callback(model){
+    alert(JSON.stringify(model));
   }
 
   private openRater(){
@@ -52,6 +52,10 @@ export class FilmViewModel{
       callback: this.callback.bind(this),
       options: <DialogOptions>{
         modal: true
+      },
+      content:{
+        viewModel:'core/ui/elements/rater-dialog',
+        model: {rating: 0}
       },
       actions: <DialogAction[]>[{
         label: 'dialog.dismiss.label',
