@@ -11,9 +11,13 @@
             <span>Writer: </span><span>${film.writers | arrayToString:'name'}</span>
           </div>
           <div class="flex">
-            <paper-icon-button icon="star" cmd="command.bind: openRaterCommand"></paper-icon-button>
-            <paper-icon-button if.bind="!film.inWatchlist" cmd="command.bind: addToWatchlistCommand; parameter.bind: film" icon="bookmark-border"></paper-icon-button>
-            <paper-icon-button if.bind="film.inWatchlist" cmd="command.bind: deleteFromWatchlistCommand; parameter.bind: film" icon="bookmark"></paper-icon-button>
+            <paper-button if.bind="film.userRating == null" cmd="command.bind: openRaterCommand"><iron-icon icon="star-border"></iron-icon></paper-button>
+            <paper-button if.bind="film.userRating != null" cmd="command.bind: openRaterCommand">
+              <iron-icon icon="star"></iron-icon>
+              ${film.userRating}
+            </paper-button>
+            <paper-button if.bind="!film.inWatchlist" cmd="command.bind: addToWatchlistCommand; parameter.bind: film"><iron-icon icon="bookmark-border"></iron-icon></paper-button>
+            <paper-button if.bind="film.inWatchlist" cmd="command.bind: deleteFromWatchlistCommand; parameter.bind: film"><iron-icon icon="bookmark"></iron-icon></paper-button>
           </div>
         </div>
       </div>

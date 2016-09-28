@@ -34,6 +34,7 @@ declare module 'film-model'{
     votes: number;
     type: MediaType;
     inWatchlist: boolean;
+    userRating: number;
   }
   
   export interface FilmPerson{

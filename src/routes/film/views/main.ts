@@ -43,7 +43,7 @@ export class FilmViewModel{
   }
 
   private callback(model){
-    alert(JSON.stringify(model));
+    this.film.userRating = model.rating;
   }
 
   private openRater(){
@@ -55,7 +55,7 @@ export class FilmViewModel{
       },
       content:{
         viewModel:'core/ui/elements/rater-dialog',
-        model: {rating: 0}
+        model: {rating: this.film.userRating}
       },
       actions: <DialogAction[]>[{
         label: 'dialog.dismiss.label',
