@@ -1,16 +1,43 @@
 <template>
   <link rel="import" href="./styles/film-styles.html">
-  <film>
+  <film class="layout horizontal">
+    <paper-card heading="${film.title}" class="flex" image="${film.urlPoster}">
+      <div class="card-content">
+        <div>Director: ${film.directors | arrayToString:'name'}</div>
+        <div>Writer: ${film.writers | arrayToString:'name'}</div>
+      </div>
+      <div class="card-actions">
+        <paper-button if.bind="film.userRating == null" cmd="command.bind: openRaterCommand"><iron-icon icon="star-border"></iron-icon></paper-button>
+        <paper-button if.bind="film.userRating != null" cmd="command.bind: openRaterCommand">
+          <iron-icon icon="star"></iron-icon>
+          ${film.userRating}
+        </paper-button>
+        <paper-button if.bind="!film.inWatchlist" cmd="command.bind: addToWatchlistCommand; parameter.bind: film"><iron-icon icon="bookmark-border"></iron-icon></paper-button>
+        <paper-button if.bind="film.inWatchlist" cmd="command.bind: deleteFromWatchlistCommand; parameter.bind: film"><iron-icon icon="bookmark"></iron-icon></paper-button>
+      </div>
+    </paper-card>
+    <div role="listbox" class="flex-3" scrollable>
+      <paper-icon-item repeat.for="actor of film.actors">
+        <div class="actor-profile-photo" background-image.bind="actor.urlPhoto" item-icon></div>
+        <paper-item-body two-line>
+          <div>${actor.actorName}</div>
+          <div secondary>${actor.character}</div>
+        </paper-item-body>
+      </paper-icon-item>
+    </div>
+
+  </film>
+  <!--<film>
     <div class="layout vertical full-height">
       <div class="layout horizontal flex">
         <div class="flex film-poster" background-image.bind="film.urlPoster"></div>
-        <div class="flex-3 layout vertical">
-          <div class="flex">
+        <div class="flex-3 layout horizontal">
+          <div class="flex-3">
             <h1>${film.title}</h1>
             <span>Director: </span><span>${film.directors | arrayToString:'name'}</span>
             <span>Writer: </span><span>${film.writers | arrayToString:'name'}</span>
           </div>
-          <div class="flex">
+          <div class="flex layout vertical">
             <paper-button if.bind="film.userRating == null" cmd="command.bind: openRaterCommand"><iron-icon icon="star-border"></iron-icon></paper-button>
             <paper-button if.bind="film.userRating != null" cmd="command.bind: openRaterCommand">
               <iron-icon icon="star"></iron-icon>
@@ -22,16 +49,16 @@
         </div>
       </div>
       <div class="flex-3" role="listbox">
-        <!--paper-icon-item repeat.for="actor of film.actors">
+        &lt;!&ndash;paper-icon-item repeat.for="actor of film.actors">
           <div class="actor-profile-photo" background-image.bind="actor.urlPhoto" item-icon></div>
           <paper-item-body two-line>
             <div>${actor.actorName}</div>
             <div secondary>${actor.character}</div>
           </paper-item-body>
-        </paper-icon-item-->
+        </paper-icon-item&ndash;&gt;
       </div>
     </div>
-    <!--div class="layout horizontal wrap">
+    &lt;!&ndash;div class="layout horizontal wrap">
       <div class="flex">
         <paper-card heading="${film.title}" image="${film.urlPoster}" alt="${film.title}">
           <div class="card-content">
@@ -52,6 +79,6 @@
           </paper-item-body>
         </paper-icon-item>
       </div>
-    </div-->
-  </film>
+    </div&ndash;&gt;
+  </film>-->
 </template>

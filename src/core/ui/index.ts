@@ -8,5 +8,7 @@ export function configure(fc:FrameworkConfiguration) {
     './command/command-ext',
     './behaviors/on-enter',
     './behaviors/background-image',
+    './behaviors/scrollable',
+    './behaviors/full-height',
     './elements/searcher-toolbar']);
 }
